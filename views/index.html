@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>URL Shortener</title>
+    <h1>URL Shortener</h1>
+    <style>
+      *{
+      font-family: Roboto, sans-serif;
+      
+      }
+    </style>
+  </head>
+  <body>
+    <div class="App">
+
+      <form method="post" action="/shorturl">
+        <fieldset>
+          <legend>URL Shortener</legend>
+          <label for="url_input">URL:</label>
+          <input class ="form-group" type="text" name="url" placeholder="Enter a Valid URL" id="url_input" required></input>
+          <button type="submit" value="POST URL">Post URL</button>
+      
+      
+        </fieldset> 
+      </form>
+      
+       </div>
+   
+  </body>
+</html>
